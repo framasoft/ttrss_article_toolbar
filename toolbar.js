@@ -12,3 +12,12 @@ function toggle_cdm_expanded() {
         }
     });
 }
+
+function show_gift_dialog() {
+    var title      = 'Vous aimez Framanews ?';
+    var content    = 'Framasoft est une association qui ne vit que grâce à vos dons.<br>Si vous souhaitez soutenir Framasoft, c\'est <a href="http://soutenir.framasoft.org" target="_blank">par ici</a> !';
+    var thisdialog = new dijit.Dialog({ title: title, content: content });
+    dojo.body().appendChild(thisdialog.domNode);
+    thisdialog.startup();
+    thisdialog.show();
+}

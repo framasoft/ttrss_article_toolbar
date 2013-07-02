@@ -5,7 +5,7 @@ class framarticle_toolbar extends Plugin {
 	private $host;
 
 	function about() {
-		return array(0.2,
+		return array(0.3,
 			"Toolbar for easy access to feed functions, based on https://github.com/idoxlr8/article_toolbar",
 			"ldidry", false);
 	}
