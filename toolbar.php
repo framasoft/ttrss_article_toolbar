@@ -1,11 +1,16 @@
-<?php global $link; ?>
 <?php
-echo stylesheet_tag("plugins/framarticle_toolbar/css/font-awesome.css");
-	print_user_stylesheet($link)
+global $link;
 
+echo stylesheet_tag("plugins/framarticle_toolbar/css/font-awesome.css");
+print_user_stylesheet($link);
+
+if (defined('SUPPORT_FRAMASOFT') && SUPPORT_FRAMASOFT) {
 ?>
 <button class="button_nav" title="Soutenir Framasoft" onclick="show_gift_dialog()">
 <i class="icon-heart"></i></button>
+<?php
+}
+?>
 
 <button class="button_nav" title="S'abonner au flux" onclick="quickAddFeed()">
 <i class="icon-plus"></i></button>
